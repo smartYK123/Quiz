@@ -4,7 +4,7 @@ import cors from 'cors';
 import { config } from 'dotenv';
 import router from './router/route.js';
 // const dotenv = require("dotenv").config();
-
+// const authRoutes = require('./routes/authRoutes');
 /** import connection file */
 import connect from './database/conn.js';
 
@@ -24,7 +24,6 @@ const port = process.env.PORT || 8080;
 
 /** routes */
 app.use('/api', router) /** apis */
-
 
 app.get('/', (req, res) => {
     try {
